@@ -1,0 +1,93 @@
+/* Crafted with love by wolfcreative.ru :3 */
+@font-face{font-family:'Proxima Nova Regular';src:url(../fonts/ProximaNova-Regular.eot);src:url(../fonts/ProximaNova-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/ProximaNova-Regular.woff) format("woff"),url(../fonts/ProximaNova-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:'Proxima Nova Light';src:url(../fonts/ProximaNova-Light.eot);src:url(../fonts/ProximaNova-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/ProximaNova-Light.woff) format("woff"),url(../fonts/ProximaNova-Light.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:'Proxima Nova Bold';src:url(../fonts/ProximaNova-Bold.eot);src:url(../fonts/ProximaNova-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/ProximaNova-Bold.woff) format("woff"),url(../fonts/ProximaNova-Bold.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:'Proxima Nova Black';src:url(../fonts/ProximaNova-Black.eot);src:url(../fonts/ProximaNova-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/ProximaNova-Black.woff) format("woff"),url(../fonts/ProximaNova-Black.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:'GT Walsheim Pro Regular';src:url(../fonts/gtwalsheimpro-webfont.woff2) format("woff2"),url(../fonts/gtwalsheimpro-webfont.woff) format("woff");font-weight:400;font-style:normal}
+@font-face{font-family:'Proxima Nova Semibold';src:url(../fonts/ProximaNova-Semibold.eot);src:url(../fonts/ProximaNova-Semibold.eot?#iefix) format("embedded-opentype"),url(../fonts/ProximaNova-Semibold.woff) format("woff"),url(../fonts/ProximaNova-Semibold.ttf) format("truetype");font-weight:400;font-style:normal}
+
+%container-padding{
+    padding:50px 0 65px;
+    @media (max-width:959px){padding:30px 0 40px}
+}
+
+$color-green:#26ca10;
+
+body{
+    margin:0 auto;font-family:'Proxima Nova Regular',sans-serif;font-size:18px;line-height:1.3;color:#111;
+    @media (max-width:959px){font-size:14px;line-height:22px}
+}
+.uk-container{max-width:1140px}
+a{color:#111;transition:.2s ease-in-out}
+a:hover,a:focus{color:#111;text-decoration:none;transition:.2s ease-in-out}
+b,strong{font-weight:normal;font-family:'Proxima Nova Bold',sans-serif}
+.uk-text-semibold{font-family:'Proxima Nova Semibold',sans-serif}
+blockquote{color:#111;font:18px 'Proxima Nova Regular',sans-serif;line-height:1.3;font-style:normal;padding-left:20px;border-left:2px solid $color-green}
+sup{font-size:11px}
+
+.afterhead{
+    width:100%;background:url('../img/backgrounds/afterhead.jpg') no-repeat center / cover;
+
+    nav{
+        width:355px;background:rgba(20,20,20, 0.95);font:16px/22px 'Proxima Nova Light',sans-serif;
+
+        >div{
+            padding:35px 45px;
+
+            .logo{font-size:20px;line-height:26px;color:#c8c8c8}
+            
+            ul{
+                margin:80px 0 100px;
+                a{font-size:20px;line-height:28px}
+            }
+    
+            .phone{
+                font-size:16px;line-height:22px;
+                a{font-size:20px}
+            }
+    
+            .social{margin:25px 0 5px;display:block}
+        }
+    }
+
+    .right{
+        height:100%;box-sizing:border-box;padding:25px 40px;position:relative;
+        
+        .bottom{
+            position: absolute;bottom:40px;
+        }
+    }
+}
+
+.about{
+    @extend %container-padding;
+
+    @media (min-width:1200px){
+        background: url(../img/shashki.png) no-repeat top right;
+        .uk-container>*{max-width:710px}
+    }
+
+    .uk-container{
+
+        .uk-text-semibold{font-size:20px}
+    }
+}
+
+h1,h2,h3,h4,.uk-h1{font-family:'Proxima Nova Black',sans-serif;line-height:normal;color:#111}
+h1,.uk-h1{
+    max-width:680px;font-size:68px;line-height:80px;text-shadow:0 0 5px rgba(0, 0, 0, 0.6);
+    span{font:38px/68px 'Proxima Nova Regular',sans-serif}
+}
+
+h2{font-size:48px}
+
+.uk-button{
+    border-radius: 4px;box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);text-transform:none;
+
+    &.uk-button-green{
+        background-color:$color-green;
+        &:hover,&:focus{background-color:darken($color-green, 10%)}
+    }
+    &.uk-button-large{
+        font:22px/58px 'Proxima Nova Bold',sans-serif;color:#fff;
+    }
+}
