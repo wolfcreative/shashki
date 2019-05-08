@@ -96,17 +96,18 @@ sup{font-size:11px}
         @media(max-width:639px){width:50%}
     }
     
-    img{height:100%;border-radius:3px;object-fit:cover}
+    .uk-inline>img{min-height:340px;height:100%;border-radius:3px;object-fit:cover}
 
     .uk-overlay{
         @media(max-width:639px){padding:20px}
+        @media(max-width:439px){padding:20px 15px}
     }
     .uk-overlay-primary{background:rgba(0, 0, 0, 0.3);border-radius:3px}
 
     h3,p{color:#fff}
     @media(max-width:439px){
         h3{font-size:20px}
-        p{display:none}
+        p{font-size:14px}
     }
 }
 
@@ -279,7 +280,7 @@ h2,h3{
 }
 .uk-list-arrow li{
     padding-left:30px;position:relative;
-    &:before{content:'';width:15px;height:17px;background:url(../img/awesome/list-arrow.svg);position:absolute;left:0;top:50%;transform:translate(-50%, -50%)}
+    &:before{content:'';width:15px;height:17px;background:url(../img/awesome/list-arrow.png);position:absolute;left:0;top:50%;transform:translate(-50%, -50%)}
 }
 .uk-list-dotted li{
     padding-left:15px;position:relative;
