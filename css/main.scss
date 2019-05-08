@@ -162,7 +162,16 @@ sup{font-size:11px}
 
 .formline{@extend %container-padding;background:#e6e6e6}
 
-.recomend{@extend %container-padding}
+.recomend{
+    @extend %container-padding;
+
+    background:#e2eee0;position:relative;
+    &:before,&:after{content:url(../img/benefit/ben-left.png);position:absolute;z-index:2;left:0;top:0}
+    &:after{content:url(../img/benefit/ben-left.png);transform:scaleX(-1);left:auto;right:0}
+    @media (max-width:959px){overflow:hidden}
+
+    >.uk-container{position:relative;z-index:3}
+}
 
 .reviews{
     @extend %container-padding;
@@ -222,6 +231,26 @@ sup{font-size:11px}
             span{font-size:16px;color:#9f9e9e;text-transform:none}
         }
     }
+}
+
+.notify-survey{background:#202021;z-index:50}
+.notify-survey .empty i{width:100%;height:100%;background:url(../img/backgrounds/notify.jpg) center / cover;display:block}
+.notify-survey .empty:before{content:'';position:absolute;top:0;left:0;width:0;height:0;border-style:solid;border-width:93px 93px 0 0;border-color:#202021 transparent transparent}
+.notify-survey .empty:after{content:'';position:absolute;top:0;right:0;border-style:solid;border-width:0 0 93px 93px;border-color:transparent transparent #202021}
+.notify-survey .info{padding:12px 10px}
+.notify-survey h2{color:#fff;font-size:20px;line-height:19px;margin-bottom:7px}
+.notify-survey h2 span{color:#41b236}
+.notify-survey p{color:#fff;font-size:12px;opacity:.7;text-transform:uppercase}
+@media (max-width:1200px){
+.notify-survey .button{text-align:right}
+.notify-survey .info{padding:12px 10%}
+}
+@media (max-width:959px){
+.notify-survey .info{padding:12px 4%}
+}
+@media (max-width:479px){
+.notify-survey h2{font-size:16px}
+.notify-survey .uk-button{padding:0 15px}
 }
 
 footer{font-size:16px;color:#9f9e9e;padding:25px 0}

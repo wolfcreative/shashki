@@ -26,12 +26,12 @@ $form['form-1'] = array(
 				'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
 			)
 		),
-		'tel' => array(
+		'phone' => array(
 			'title' => 'Телефон',
 			'validate' => array(
 				'preg' => '%[A-Z-a-zА-Яа-я\s]%',
 				'minlength' => '5',
-				'maxlength' => '16',
+				'maxlength' => '18',
 			),
 			'messages' => array(
 				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
