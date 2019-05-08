@@ -34,14 +34,16 @@ sup{font-size:11px}
 
         >div{
             padding:35px 45px;
-            @media(max-width:369px){padding:30px 25px}
+            @media(max-width:639px){padding:23px 15px 20px}
 
-            .logo{font-size:20px;line-height:26px;color:#c8c8c8}
+            .logo{
+                font-size:20px;line-height:26px;color:#c8c8c8;
+                @media (max-width:639px){font-size:16px;line-height:22px}
+            }
             
             ul{
-                margin:80px 0 100px;
-                @media(max-width:959px){margin:61px 0 68px}
-                @media(max-width:369px){margin:35px 0 45px}
+                margin:80px 0 100px!important;
+                @media(max-width:959px){margin:61px 0 68px!important}
 
                 a{font-size:20px;line-height:28px}
             }
@@ -59,12 +61,13 @@ sup{font-size:11px}
     }
 
     .right{
-        height:100%;box-sizing:border-box;padding:25px 40px;position:relative;
-        @media(max-width:959px){padding:30px 15px}
-        
-        .bottom{
-            position:absolute;bottom:40px;
+        >div{
+            height:100%;box-sizing:border-box;padding:25px 40px;position:relative;
+            @media(min-width:640px){.bottom{position:absolute;bottom:40px}}
+            @media(max-width:959px){padding:30px 15px}
         }
+        @media(max-width:959px){background:rgba(0,0,0,0.1)}
+        @media(max-width:639px){background:rgba(0,0,0,0.3)}
     }
 }
 
@@ -227,10 +230,14 @@ h1,.uk-h1{
     max-width:680px;font-size:68px;line-height:80px;text-shadow:0 0 5px rgba(0, 0, 0, 0.6);
     @media(max-width:1199px){font-size:52px;line-height:60px}
     @media(max-width:959px){font-size:43px;line-height:50px}
+    @media(max-width:639px){font-size:34px;line-height:normal}
+    @media(max-width:439px){font-size:30px}
 
     span{
         font:38px/68px 'Proxima Nova Regular',sans-serif;
         @media(max-width:959px){font-size:28px;line-height:48px}
+        @media(max-width:639px){font-size:24px;line-height:normal}
+        @media(max-width:439px){font-size:22px}
     }
 }
 h2,h3{
@@ -240,6 +247,8 @@ h2,h3{
 }
 
 .subtitle{font-size:22px;margin:-10px 0 25px}
+
+.uk-modal .text{text-align:center;margin-top:-15px}
 
 .uk-button{
     border-radius:4px;text-transform:none;
@@ -274,5 +283,5 @@ h2,h3{
 }
 .uk-list-dotted li{
     padding-left:15px;position:relative;
-    &:before{content:'';width:7px;height:7px;background:url(../img/awesome/list-dotted.svg);position:absolute;left:0;top:50%;transform:translate(-50%, -50%)}
+    &:before{content:'';width:6px;height:6px;background:#fff;border:1px solid $color-green;border-radius:10px;position:absolute;left:0;top:50%;transform:translate(-50%, -50%)}
 }
