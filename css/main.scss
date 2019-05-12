@@ -176,7 +176,7 @@ sup{font-size:11px}
 .reviews{
     @extend %container-padding;
 
-    background:#efefef;
+    background:#efefef;position:relative;z-index:3;
 
     .uk-slider{
         max-width:550px;margin:0 auto;
