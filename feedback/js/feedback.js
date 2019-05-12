@@ -128,7 +128,7 @@ mcf.done(function(conf) {
 
                             UIkit.modal.dialog('<button class="uk-modal-close-default" type="button" uk-close></button><div class="uk-modal-header uk-text-center"><h2 class="uk-modal-title uk-margin-small-top">Готово!</h2></div><div class="uk-modal-body uk-text-center"><p>Форма успешно отправлена! Пожалуйста, ожидайте звонка менеджера. Вам скоро перезвонят</p></div>');
 
-                            setInterval(function() {
+                            setTimeout(function() {
                                 UIkit.modal('.uk-modal.uk-open').hide();
                             }, 7000);
                         }

@@ -39,6 +39,9 @@ $form['form-1'] = array(
 				'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
 			)
 		),
+		'product' => array(
+			'title' => 'Продукт'
+		),
 	),
 	'cfg' => array(
 		'charset' => 'utf-8',

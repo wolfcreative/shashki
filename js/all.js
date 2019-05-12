@@ -2,6 +2,8 @@ $(function() {
     $( "a.uk-button[data-uk-toggle]" ).on( "click", function() {
         let classes = ($(this).attr('class') || '').split(' ');
         let title = $('#modal-callback').find('h4');
+        let inputProduct = $( "form input[name=product]" );
+        inputProduct.val(' ');
         title.next().remove();
 
         for (var i = 0, len = classes.length; i < len; i++) {
@@ -17,6 +19,7 @@ $(function() {
 
                     title.text('Заказать');
                     $( "<p class='text'>" + count + wordShashki + 'по цене ' + price + 'руб' + "</p>" ).insertAfter(title);
+                    inputProduct.val(count + wordShashki + 'по цене ' + price + 'руб');
                     break;
                 default:
                     title.text('Заказать обратный звонок');
